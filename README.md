@@ -1,4 +1,4 @@
-# gulp-mocha-phantomjs
+# gulp-mocha-chrome
 
 :coffee:  Run Mocha tests using headless Google Chrome through Gulp
 
@@ -75,7 +75,7 @@ also connect to remote (or locally served) urls for testing. eg:
 
 ```js
 gulp.task('test', function () {
-  const stream = mochaPhantomJS();
+  const stream = mochaChrome();
   stream.write({path: 'http://localhost:8000/index.html'});
   stream.end();
   return stream;
